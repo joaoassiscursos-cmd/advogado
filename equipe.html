@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Equipe - Carvalho e Araújo Advogados</title>
+    <link rel="stylesheet" href="equipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header-equipe">
+        <nav class="nav-container">
+            <div class="nav-links">
+                <a href="index.html">INÍCIO</a>
+                <a href="equipe.html" class="active">EQUIPE</a>
+                <a href="index.html#atuacao-section">ÁREA DE ATUAÇÃO</a>
+                <a href="index.html#onde-estamos">ESCRITÓRIOS</a>
+            </div>
+        </nav>
+    </header>
+
+    <a href="https://wa.me/5516996068689" target="_blank" class="whatsapp-fixo">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <main id="grid-equipe" class="equipe-grid">
+        <div class="advogado-card" onclick="verPerfil('adv1')">
+            <img src="advogado1.jpeg" alt="Alex Araujo de Carvalho">
+            <div class="advogado-info">
+                <h3>Alex Araujo de Carvalho</h3>
+                <p>Sócio-Fundador</p>
+                <span>OAB/SP: 282962</span>
+            </div>
+        </div>
+
+        <div class="advogado-card" onclick="verPerfil('adv2')">
+            <img src="advogado2.jpeg" alt="Advogado 2">
+            <div class="advogado-info">
+                <h3>Rafael Macera Delgado</h3>
+                <p>Advogado Civil e Tributário</p>
+                <span>OAB/SP: 509.744</span>
+            </div>
+        </div>
+
+        <div class="advogado-card" onclick="verPerfil('adv3')">
+            <img src="advogado3.jpeg" alt="Advogado 3">
+            <div class="advogado-info">
+                <h3>Rogeria de Souza Borrer</h3>
+                <p>Advogada Civil e Trabalhista</p>
+                <span>OAB/SP: 367.818</span>
+            </div>
+        </div>
+
+        <div class="advogado-card" onclick="verPerfil('adv4')">
+            <img src="advogado4.jpeg" alt="Advogado 4">
+            <div class="advogado-info">
+                <h3>Douglas Araújo de Carvalho</h3>
+                <p>Advogado Previdenciário e Trabalhist</p>
+                <span>OAB/SP 485.151 </span>
+            </div>
+        </div>
+    </main>
+
+    <section id="perfil-detalhado" class="perfil-secao">
+        <button class="btn-voltar" onclick="voltarGrade()">
+            <i class="fas fa-arrow-left"></i> VOLTAR PARA EQUIPE
+        </button>
+        <div id="conteudo-perfil"></div>
+    </section>
+
+    <script>
+        const dadosEquipe = {
+            'adv1': { 
+                nome: 'Alex Araujo de Carvalho', 
+                foto: 'advogado1.jpeg', 
+                cargo: 'Sócio-Fundador', 
+                oab: 'OAB/SP: 282962', 
+                email: 'alexaraujo_carvalho@adv.oabsp.org.br', 
+                bio: `Advogado desde 2009, formado pela Universidade Paulista – Unip, sólida base acadêmica, com especialidades em Direito Administrativo (Verbo Jurídico), Direito Ambiental (Damásio), Direito Processual Civil e do Trabalho (FAAP) e Direito Tributário (IBET).<br><br>
+                      Procurador Jurídico do Município de Santa Cruz da Esperança-SP e Professor Universitário. Sua atuação profissional é caracterizada pela visão estratégica e pela integração de competências, garantindo uma defesa de alta performance técnica.` 
+            },
+
+
+            'adv2': { nome: 'Rafael Macera Delgado', foto: 'advogado2.jpeg', cargo: 'Advogado Civil e Tributário', oab: 'OAB/SP: 509.744', email: 'contato@email.com', bio: 'Biografia em breve.' },
+            'adv3': { nome: 'Rogeria de Souza Borrer', foto: 'advogado3.jpeg', cargo: 'Advogada Civil e Trabalhista', oab: 'Oab/SP: 367.818', email: 'contato@email.com', bio: 'Biografia em breve.' },
+            'adv4': { nome: 'Douglas Araújo de Carvalho', foto: 'advogado4.jpeg', cargo: 'Advogado Previdenciário e Trabalhista', oab: 'OAB/SP 485.151', email: 'contato@email.com', bio: 'Biografia em breve.' }
+        };
+
+        function verPerfil(id) {
+            const adv = dadosEquipe[id];
+            const cont = document.getElementById('conteudo-perfil');
+            cont.innerHTML = `
+                <div class="perfil-container-premium">
+                    <img src="${adv.foto}" class="foto-perfil-flow">
+                    <div class="texto-perfil-flow">
+                        <h1>${adv.nome}</h1>
+                        <p class="cargo-premium">${adv.cargo}</p>
+                        <p class="oab-premium">${adv.oab}</p>
+                        <p class="email-premium"><i class="fas fa-envelope"></i> ${adv.email}</p>
+                        
+                        <h2 class="titulo-bio">Sobre o Profissional</h2>
+                        <div class="bio-texto">${adv.bio}</div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            `;
+            document.getElementById('grid-equipe').style.display = 'none';
+            document.getElementById('perfil-detalhado').style.display = 'block';
+            window.scrollTo(0,0);
+        }
+
+        function voltarGrade() {
+            document.getElementById('grid-equipe').style.display = 'grid';
+            document.getElementById('perfil-detalhado').style.display = 'none';
+            window.scrollTo(0,0);
+        }
+    </script>
+</body>
+</html>

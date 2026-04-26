@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main # <--- Verifique se no seu GitHub está 'main' ou 'principal'
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "home"
+    label: "Página Inicial"
+    files:
+      - label: "Conteúdo Principal"
+        name: "conteudo"
+        file: "dados.json"
+        fields:
+          - { label: "Título Principal (Hero)", name: "titulo_site", widget: "string" }
+          - { label: "Subtítulo/Descrição", name: "descricao_site", widget: "text" }
+          - { label: "Cor de Destaque", name: "cor_fundo", widget: "color", default: "#e67e22" }
