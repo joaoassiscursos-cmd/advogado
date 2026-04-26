@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carvalho e Araújo Advogados</title>
@@ -485,5 +486,28 @@ function fecharModalExterno(event) {
     
     
     </script>
+<script>
+  // Faz o site ler os dados que o advogado editou
+  fetch('./dados.json')
+    .then(response => response.json())
+    .then(data => {
+      // Ajusta o título principal e o texto de apoio do site do advogado
+      if(data.titulo_site) document.querySelector('.hero-content h1').innerText = data.titulo_site;
+      if(data.descricao_site) document.querySelector('.hero-content p').innerText = data.descricao_site;
+    })
+    .catch(err => console.log("Aguardando primeira edição no painel..."));
+
+  // Garante que o login redirecione para o lugar certo
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+    
 </body>
 </html>
