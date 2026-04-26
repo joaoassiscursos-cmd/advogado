@@ -7,18 +7,7 @@
     <title>Carvalho e Araújo Advogados</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
-
-
-
-
-
-
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
 </head>
 <body>
 
@@ -49,9 +38,8 @@
 
     <section id="hero" class="hero">
         <div class="hero-content">
-            <p>SEU DIREITO, NOSSA PRIORIDADE ABSOLUTA</p>
-            <h1>Carvalho & Araujo
-            Advogados</h1>
+            <p id="texto-apoio-hero">SEU DIREITO, NOSSA PRIORIDADE ABSOLUTA</p>
+            <h1 id="titulo-principal-hero">Carvalho & Araujo<br>Advogados</h1>
             <a href="#about-section" class="hero-btn">Conheça nosso trabalho</a>
         </div>
     </section>
@@ -62,162 +50,118 @@
             <span class="orange-label">SOBRE NÓS</span>
             <h1 class="main-title">Somos um escritorio jurídico estratégico com atuação nacional</h1>
             <p class="description">Fundado em 2019, voltado a proteção de patrimonio, redução de riscos, analise técnica e acompanhamento próximo, cada demanda é tratada de forma personalisada, com foco em decisões seguras, com o olhar voltado para o futuro, inovamos em processos e tecnologias, potencializamos talentos e inspiramos as próximas gerações.<br> Acreditamos que unir diferentes pontos de vistas nos diferencia na construções de soluções jurídicas inovadoras e contribui, ativamente, para o aprimoramento da sociedade Brasileira.</p>
-            
         </div>
     </section>
-
 
     <section id="atuacao-section" class="about reverse">
-    <img src="areas.png" alt="Áreas de Atuação" class="about-img">
-    <div class="about-text-content">
-        <span class="orange-label">ÁREAS DE ATUAÇÃO</span>
-        <h1 class="main-title">Variedade e Especialização em Direito:</h1>
-        <p class="description">Conheça nossas áreas de atuação, onde a experiência de nossa equipe em processos judiciais e administrativos, consultoria e resolução de conflitos se somam para entregar soluções jurídicas integrais e céleres</p>
+        <img src="areas.png" alt="Áreas de Atuação" class="about-img">
+        <div class="about-text-content">
+            <span class="orange-label">ÁREAS DE ATUAÇÃO</span>
+            <h1 class="main-title">Variedade e Especialização em Direito:</h1>
+            <p class="description">Conheça nossas áreas de atuação, onde a experiência de nossa equipe em processos judiciais e administrativos, consultoria e resolução de conflitos se somam para entregar soluções jurídicas integrais e céleres</p>
 
-        <div class="grid-container" style="display: grid; grid-template-columns: 1fr; gap: 15px; margin-top: 20px;">
-            <div class="item-card" style="cursor: pointer;" onclick="abrirModal('modal-admin')">
-                <i class="fas fa-university"></i>
-                <div>
-                    <span>ADMINISTRATIVO & ELEITORAL</span>
-                    <small style="display: block; color: #e67e22; font-size: 11px;">LER MAIS +</small>
+            <div class="grid-container" style="display: grid; grid-template-columns: 1fr; gap: 15px; margin-top: 20px;">
+                <div class="item-card" style="cursor: pointer;" onclick="abrirModal('modal-admin')">
+                    <i class="fas fa-university"></i>
+                    <div>
+                        <span>ADMINISTRATIVO & ELEITORAL</span>
+                        <small style="display: block; color: #e67e22; font-size: 11px;">LER MAIS +</small>
+                    </div>
                 </div>
-            </div>
 
-            <div class="item-card" style="cursor: pointer;" onclick="abrirModal('modal-civil')">
-                <i class="fas fa-gavel"></i>
-                <div>
-                    <span>CIVIL</span>
-                    <small style="display: block; color: #e67e22; font-size: 11px;">LER MAIS +</small>
+                <div class="item-card" style="cursor: pointer;" onclick="abrirModal('modal-civil')">
+                    <i class="fas fa-gavel"></i>
+                    <div>
+                        <span>CIVIL</span>
+                        <small style="display: block; color: #e67e22; font-size: 11px;">LER MAIS +</small>
+                    </div>
                 </div>
-            </div>
 
-            <div class="item-card" style="cursor: pointer;" onclick="abrirModal('modal-empresarial')">
-                <i class="fas fa-briefcase"></i>
-                <div>
-                    <span>EMPRESARIAL, AMBIENTAL & TRIBUTÁRIO</span>
-                    <small style="display: block; color: #e67e22; font-size: 11px;">LER MAIS +</small>
+                <div class="item-card" style="cursor: pointer;" onclick="abrirModal('modal-empresarial')">
+                    <i class="fas fa-briefcase"></i>
+                    <div>
+                        <span>EMPRESARIAL, AMBIENTAL & TRIBUTÁRIO</span>
+                        <small style="display: block; color: #e67e22; font-size: 11px;">LER MAIS +</small>
+                    </div>
                 </div>
-            </div>
 
-            <div class="item-card" style="cursor: pointer;" onclick="abrirModal('modal-trabalhista')">
-                <i class="fas fa-users-cog"></i>
-                <div>
-                    <span>TRABALHISTA & PREVIDENCIÁRIO</span>
-                    <small style="display: block; color: #e67e22; font-size: 11px;">LER MAIS +</small>
+                <div class="item-card" style="cursor: pointer;" onclick="abrirModal('modal-trabalhista')">
+                    <i class="fas fa-users-cog"></i>
+                    <div>
+                        <span>TRABALHISTA & PREVIDENCIÁRIO</span>
+                        <small style="display: block; color: #e67e22; font-size: 11px;">LER MAIS +</small>
+                    </div>
                 </div>
-            </div>
 
-            <div class="item-card" style="cursor: pointer;" onclick="abrirModal('modal-penal')">
-                <i class="fas fa-balance-scale"></i>
-                <div>
-                    <span>DIREITO PENAL</span>
-                    <small style="display: block; color: #e67e22; font-size: 11px;">LER MAIS +</small>
+                <div class="item-card" style="cursor: pointer;" onclick="abrirModal('modal-penal')">
+                    <i class="fas fa-balance-scale"></i>
+                    <div>
+                        <span>DIREITO PENAL</span>
+                        <small style="display: block; color: #e67e22; font-size: 11px;">LER MAIS +</small>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<div id="modal-container" class="modal-overlay" onclick="fecharModalExterno(event)">
-    <div class="modal-content">
-        <span class="close-modal" onclick="fecharModal()">&times;</span>
-        <div id="modal-body-text">
-            </div>
-    </div>
-</div>
-
-    <section>
-        <div id="cont-atuacao" class="accordion-content-fechado">
-            <div class="grid-container">
-                <a href="#" class="item-card"><i class="fas fa-leaf"></i><span>AMBIENTAL</span></a>
-                <a href="#" class="item-card"><i class="fas fa-gavel"></i><span>CIVIL</span></a>
-                <a href="#" class="item-card"><i class="fas fa-users-cog"></i><span>TRABALHISTA</span></a>
-                <a href="#" class="item-card"><i class="fas fa-file-invoice-dollar"></i><span>TRIBUTÁRIO</span></a>
-                <a href="#" class="item-card"><i class="fas fa-briefcase"></i><span>EMPRESARIAL</span></a>
             </div>
         </div>
     </section>
 
-    
-
-   
-
-
-
-          <section id="onde-estamos" class="onde-estamos">
-    <span class="orange-label">ONDE ESTAMOS</span>
-    <div class="locais-container">
-    <div class="local-wrapper">
-        <div class="local-item" onclick="toggleLocal('info-ribeirao')" style="display: flex; justify-content: center; align-items: center; padding: 10px 12px; position: relative;">
-            <div style="display: flex; align-items: center; gap: 8px;">
-                <span class="fi fi-br" style="font-size: 14px; border-radius: 2px;"></span>
-                <p style="margin: 0; font-size: 12px; font-weight: bold; white-space: nowrap;">RIBEIRÃO PRETO - SP</p>
-            </div>
-            <i class="fas fa-caret-down" style="font-size: 12px; position: absolute; right: 15px;"></i>
-        </div>
-        <div id="info-ribeirao" class="local-info-hidden" style="text-align: center;">
-            <div style="background: rgba(255,255,255,0.1); padding: 8px; margin-bottom: 12px; border-radius: 4px;">
-               <!-- <span style="font-size: 11px; font-weight: bold; color: #e67e22; text-transform: uppercase; letter-spacing: 1px;">!...U</span>-->
-            </div>
-            <img src="foto-RP.jpeg" alt="Unidade RP" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px; margin-bottom: 12px; border: 1px solid #444;">
-            <p>R. Áureliano García de Oliveira, 372</p>
-            <p>Sala 20 - Nova Ribeirânia</p>
-            <p>Ribeirão Preto - SP | CEP: 14096-750</p>
-            <p style="margin-top: 10px;"><i class="fas fa-phone"></i> (16) 99606-8689</p>
+    <div id="modal-container" class="modal-overlay" onclick="fecharModalExterno(event)">
+        <div class="modal-content">
+            <span class="close-modal" onclick="fecharModal()">&times;</span>
+            <div id="modal-body-text"></div>
         </div>
     </div>
 
-    <div class="local-wrapper">
-        <div class="local-item" onclick="toggleLocal('info-santarita')" style="display: flex; justify-content: center; align-items: center; padding: 10px 12px; position: relative;">
-            <div style="display: flex; align-items: center; gap: 8px;">
-                <span class="fi fi-br" style="font-size: 14px; border-radius: 2px;"></span>
-                <p style="margin: 0; font-size: 11px; font-weight: bold; white-space: nowrap;">STA RITA PASSA QUATRO - SP</p>
+    <section id="onde-estamos" class="onde-estamos">
+        <span class="orange-label">ONDE ESTAMOS</span>
+        <div class="locais-container">
+            <div class="local-wrapper">
+                <div class="local-item" onclick="toggleLocal('info-ribeirao')" style="display: flex; justify-content: center; align-items: center; padding: 10px 12px; position: relative;">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <span class="fi fi-br" style="font-size: 14px; border-radius: 2px;"></span>
+                        <p style="margin: 0; font-size: 12px; font-weight: bold; white-space: nowrap;">RIBEIRÃO PRETO - SP</p>
+                    </div>
+                    <i class="fas fa-caret-down" style="font-size: 12px; position: absolute; right: 15px;"></i>
+                </div>
+                <div id="info-ribeirao" class="local-info-hidden" style="text-align: center;">
+                    <img src="foto-RP.jpeg" alt="Unidade RP" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px; margin-bottom: 12px; border: 1px solid #444;">
+                    <p>R. Áureliano García de Oliveira, 372</p>
+                    <p>Sala 20 - Nova Ribeirânia</p>
+                    <p>Ribeirão Preto - SP | CEP: 14096-750</p>
+                    <p style="margin-top: 10px;"><i class="fas fa-phone"></i> (16) 99606-8689</p>
+                </div>
             </div>
-            <i class="fas fa-caret-down" style="font-size: 12px; position: absolute; right: 15px;"></i>
-        </div>
-        <div id="info-santarita" class="local-info-hidden" style="text-align: center;">
-            <div style="background: rgba(255,255,255,0.1); padding: 8px; margin-bottom: 12px; border-radius: 4px;">
-               <!-- <span style="font-size: 11px; font-weight: bold; color: #e67e22; text-transform: uppercase; letter-spacing: 1px;">Unidade Brasil</span>-->
+
+            <div class="local-wrapper">
+                <div class="local-item" onclick="toggleLocal('info-santarita')" style="display: flex; justify-content: center; align-items: center; padding: 10px 12px; position: relative;">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <span class="fi fi-br" style="font-size: 14px; border-radius: 2px;"></span>
+                        <p style="margin: 0; font-size: 11px; font-weight: bold; white-space: nowrap;">STA RITA PASSA QUATRO - SP</p>
+                    </div>
+                    <i class="fas fa-caret-down" style="font-size: 12px; position: absolute; right: 15px;"></i>
+                </div>
+                <div id="info-santarita" class="local-info-hidden" style="text-align: center;">
+                    <img src="foto-SCP.jpeg" alt="Unidade Santa Rita" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px; margin-bottom: 12px; border: 1px solid #444;">
+                    <p>Rua Jose Gomes de Oliveira Babosa, 175</p>
+                    <p>Vila Moda</p>
+                    <p>Santa Rita do Passa Quatro - SP</p>
+                    <p style="margin-top: 10px;"><i class="fas fa-phone"></i> (19) 98910-4061</p>
+                </div>
             </div>
-            <img src="foto-SCP.jpeg" alt="Unidade Santa Rita" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px; margin-bottom: 12px; border: 1px solid #444;">
-            <p>Rua Jose Gomes de Oliveira Babosa, 175</p>
-            <p>Vila Moda</p>
-            <p>Santa Rita do Passa Quatro - SP</p>
-            <p style="margin-top: 10px;"><i class="fas fa-phone"></i> (19) 98910-4061</p>
-        </div>
-    </div>
 
-    <div class="local-wrapper">
-        <div class="local-item" onclick="toggleLocal('info-ciudad')" style="display: flex; justify-content: center; align-items: center; padding: 10px 12px; position: relative;">
-            <div style="display: flex; align-items: center; gap: 8px;">
-                <span class="fi fi-py" style="font-size: 14px; border-radius: 2px;"></span>
-                <p style="margin: 0; font-size: 12px; font-weight: bold; white-space: nowrap;">CIUDAD DEL ESTE - PY</p>
+            <div class="local-wrapper">
+                <div class="local-item" onclick="toggleLocal('info-ciudad')" style="display: flex; justify-content: center; align-items: center; padding: 10px 12px; position: relative;">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <span class="fi fi-py" style="font-size: 14px; border-radius: 2px;"></span>
+                        <p style="margin: 0; font-size: 12px; font-weight: bold; white-space: nowrap;">CIUDAD DEL ESTE - PY</p>
+                    </div>
+                    <i class="fas fa-caret-down" style="font-size: 12px; position: absolute; right: 15px;"></i>
+                </div>
+                <div id="info-ciudad" class="local-info-hidden" style="text-align: center;">
+                    <p>Informações de contato da unidade Paraguai em breve.</p>
+                </div>
             </div>
-            <i class="fas fa-caret-down" style="font-size: 12px; position: absolute; right: 15px;"></i>
         </div>
-        <div id="info-ciudad" class="local-info-hidden" style="text-align: center;">
-           <!-- <div style="background: rgba(255,255,255,0.1); padding: 8px; margin-bottom: 12px; border-radius: 4px;">
-                <span style="font-size: 11px; font-weight: bold; color: #e67e22; text-transform: uppercase; letter-spacing: 1px;">Unidade Paraguai</span>
-            </div>
-            <img src="foto-CDE.jpeg" alt="Unidade Paraguai" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px; margin-bottom: 12px; border: 1px solid #444;">
-            <p>Av. Bernardino Caballero</p>
-            <p>Edifício World Trade Center - Piso 4</p>
-            <p>Ciudad del Este - PY</p>
-            <p style="margin-top: 10px;"><i class="fas fa-phone"></i> +595 971 000 000</p> -->
-        </div>
-    </div>
-</div>
-</section>
-
-
-
-
-
-
-
-
-
-
+    </section>
 
     <section class="full-service-section">
         <div class="full-service-content">
@@ -228,7 +172,7 @@
 
     <section id="contato" class="contact-section">
         <span class="orange-label">CONTATO</span>
-        <a href="mailto:contato@secafadvogados.com.br" class="email-link">alexaraujo_carvalho@adv.oabsp.org.br</a>
+        <a href="mailto:alexaraujo_carvalho@adv.oabsp.org.br" class="email-link">alexaraujo_carvalho@adv.oabsp.org.br</a>
         <div class="social-links">
             <a href="https://www.instagram.com/carvalhoearaujo_adv/"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/profile.php?id=61584974456550"><i class="fab fa-facebook-f"></i></a>
@@ -245,10 +189,6 @@
             const overlay = document.getElementById("menu-overlay");
             overlay.style.display = (overlay.style.display === "flex") ? "none" : "flex";
         }
-        function toggleAccordion(id, setaId) {
-            const content = document.getElementById(id);
-            content.classList.toggle("accordion-content-aberto");
-        }
         function toggleLocal(id) {
             const info = document.getElementById(id);
             document.querySelectorAll('.local-info-hidden').forEach(el => {
@@ -256,258 +196,93 @@
             });
             info.style.maxHeight = info.style.maxHeight ? null : info.scrollHeight + "px";
         }
-    /* --- ADICIONE APENAS ESTE BLOCO ABAIXO --- */
 
-const textosCompletos = {
-    'modal-admin': `<h2>Administrativo & Eleitoral</h2>
-        <p><b>Administrativo:</b> Nossa equipe multidisciplinar assessora clientes em temas complexos de direito público, como licitações e contratos administrativos, empresas estatais e contencioso em direito público</p>
-        <ul>
-            <li>Defesa de agentes políticos e servidores públicos em ações de improbidade Administrativa, Ações Civis Públicas, Ações Populares, Ações de Regresso, Sindicâncias e PAD dentre outras;
-</li>
-            <li>Mandados de Segurança em geral;
-</li>
-            <li>Atuação administrativa em favor de empresas em processos de licitação: recursos, impugnações, representações junto ao Tribunal de Contas do Estado;
-</li>
-            <li>Atuação judicial em favor de empresas em processos de licitação: Mandado de Segurança, pedido de tutela de urgência, representações junto ao Ministério Público do Estado;
-</li>       
-<li>Análise de contratos da administração pública, celebrados sob o regime do direito público ou do direito privado, compreendendo sua interpretação, execução e respectivos efeitos; </li>
-<li>Adequação das atividades administrativas às exigências da legislação de finanças públicas, em especial às da Lei de Responsabilidade Fiscal;
-</li>
-<li>Assessoria a órgãos legislativos na elaboração de projetos de lei e tramitação de processos legislativos;
-</li>
-<li>Assessoria em comissões parlamentares de inquérito ou especiais, orientando os trabalhos e contribuindo para o desenvolvimento das investigações e fornecendo subsídios jurídicos para atuação dentro da lei, bem como assessoria presencial na prática de atos processuais;
-</li>
-<li>Assessoria em comissões processantes de investigação de infrações político-administrativas ou crimes de responsabilidade; orientando os trabalhos e contribuindo para o desenvolvimento das investigações e fornecendo subsídios jurídicos para atuação dentro da lei, bem como assessoria presencial na prática de atos processuais;
-</li>
-        </ul>
-        <p><b>Eleitoral:</b> Assessoramos pessoas físicas e jurídicas em questões consultivas e contenciosas relacionadas à legislação eleitoral</p>
-        <ul>
-            <li>Assessoria em campanhas eleitorais, atuação consultiva e contenciosa em todas as áreas (orientações sobre proibições da legislação, treinamento de equipes, análise de mensagens de pré-campanha e de campanha eleitoral, orientação sobre propaganda nas mídias sociais, propositura e defesa em ações pertinentes à disputa eleitoral, atuação em prestação de contas eleitorais);
-</li>
-            <li>Propositura e defesa em processos eleitorais em geral (infrações em propaganda eleitoral; ação de impugnação de mandato eletivo e ação de investigação judicial eleitoral – abuso de poder econômico, abuso de poder político e uso indevido dos meios de comunicação social; captação ilícita de sufrágio; irregularidades em arrecadação e gastos de recursos em campanhas;
-</li>
-<li>Análise prévia de condições de elegibilidade e inelegibilidades;
-</li>
-<li>Impugnação e defesa em processos de registro de candidatura;
-</li>
-<li>Propositura e defesa em ações de cassação de diploma ou de mandato;
-</li>
-        </ul>`,
+        const textosCompletos = {
+            'modal-admin': `<h2>Administrativo & Eleitoral</h2>
+                <p><b>Administrativo:</b> Nossa equipe multidisciplinar assessora clientes em temas complexos de direito público, como licitações e contratos administrativos, empresas estatais e contencioso em direito público.</p>
+                <ul>
+                    <li>Defesa de agentes políticos e servidores públicos em ações de improbidade Administrativa e ações civis públicas;</li>
+                    <li>Mandados de Segurança em geral;</li>
+                    <li>Atuação administrativa em favor de empresas em processos de licitação, bem como em processos administrativos perante órgãos da Administração Pública Direta e Indireta.</li>
+                </ul>
+                <p><b>Eleitoral:</b> Assessoramos pessoas físicas e jurídicas em questões consultivas e contenciosas relacionadas à legislação eleitoral.</p>`,
 
-    'modal-civil': `<h2>Civil</h2>
-        <p><b>Civil:</b> Estratégia Pré-Processual, Consultivo e Litigioso. Sublinhem-se as seguintes áreas de atuação:</p>
-        <ul>
-            <li>Análise ou elaboração de contrato</li>
-            <li>Parecer jurídico (viabilidade e riscos)</li>
-<li>Notificação extrajudicial e tratativas
-</li>
-            <li>Estratégia antes da ação (provas, prazos e pedidos);
-</li>
-            <li>Plano de saúde;
-</li>
-            <li>Bancário;
-</li>
-        
-            <li>Gestão Patrimonial (holding familiar, empresarial e offshores);
-</li>
-<li>Abertura de empresa no exterior;</li>
-<li>Direito Imobiliário.
-</li>
-            <li><b>Família e Sucessões:</b> Gestão Patrimonial (Holdings familiares e empresariais);</li>
-    
-        </ul>`,
+            'modal-civil': `<h2>Civil</h2>
+                <p><b>Civil:</b> Estratégia Pré-Processual, Consultivo e Litigioso. Sublinhem-se as seguintes áreas de atuação:</p>
+                <ul>
+                    <li>Análise ou elaboração de contrato</li>
+                    <li>Direito Imobiliário</li>
+                    <li>Família e Sucessões</li>
+                </ul>`,
 
-    'modal-empresarial': `<h2>Empresarial, Ambiental e Tributário</h2>
-    <p>Entregamos estudos aprofundados, pareceres estratégicos e revisão minuciosa de cláusulas para garantir segurança, equilíbrio e eficiência nas relações comerciais. Assim, prevenimos conflitos e fortalecemos decisões corporativas. sempre alinhados aos interesses da empresa. Desse modo, reduzimos desgastes e aceleramos soluções práticas.
-</p>
-        <p><b>Empresarial:</b> </p>
-<li>Pareceres técnicos, análises jurídicas e revisão contratual;</li>
-<li>Negociação e mediação de conflitos empresariais;
-</li>
-<li>Orientação preventiva e defesas Trabalhistas;
-</li>
-<li>Assessoria em fiscalizações e atendimento a órgãos reguladores;
-</li>
-<li>Relatórios processuais (dashboard jurídico).
-</li>
+            'modal-empresarial': `<h2>Empresarial, Ambiental & Tributário</h2>
+                <p>Entregamos estudos aprofundados, pareceres estratégicos e revisão minuciosa de cláusulas para garantir conformidade legal e segurança tributária.</p>`,
 
+            'modal-trabalhista': `<h2>Trabalhista & Previdenciário</h2>
+                <p><b>Previdenciário:</b> Planejamento individualizado.</p>
+                <p><b>Trabalho (Empregados):</b> Acidentes, Horas Extras, Verbas.</p>`,
 
+            'modal-penal': `<h2>Direito Penal</h2>
+                <p>Reconhecendo os direitos e garantias constitucionalmente previstos, trabalhamos na defesa criminal focada no processo justo.</p>
+                <ul>
+                    <li>Crimes Contra a Ordem Econômica;</li>
+                    <li>Crimes Contra a Previdência Social;</li>
+                    <li>Crimes Contra a Propriedade Imaterial;</li>
+                    <li>Crimes de Lavagem de Dinheiro;</li>
+                    <li>Crimes de Trânsito;</li>
+                    <li>Lei de Drogas;</li>
+                    <li>Crimes de Contrabando e Descaminho;</li>
+                    <li>Estelionato e Outras Fraudes;</li>
+                    <li>Porte Ilegal de Arma de Fogo;</li>
+                    <li>Violência Doméstica (Lei Maria da Penha);</li>
+                    <li>Crimes Sexuais;</li>
+                    <li>Lesão Corporal;</li>
+                    <li>Crimes Cibernéticos;</li>
+                    <li>Fraudes bancárias;</li>
+                    <li>Crimes Contra a Vida;</li>
+                    <li>Crimes Contra o Patrimônio;</li>
+                    <li>Crimes Contra a Honra;</li>
+                    <li>Investigação Defensiva;</li>
+                    <li>Direito das Vítimas/ Assistência à Acusação;</li>
+                    <li>Recursos Criminais;</li>
+                    <li>Opiniões Legais e Pareceres;</li>
+                    <li>Tribunais Superiores.</li>
+                </ul>`
+        };
 
+        function abrirModal(id) {
+            const modal = document.getElementById('modal-container');
+            document.getElementById('modal-body-text').innerHTML = textosCompletos[id];
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; 
+        }
 
+        function fecharModal() {
+            document.getElementById('modal-container').style.display = 'none';
+            document.body.style.overflow = 'auto'; 
+        }
 
-        <p><b>Ambiental:</b> A atuação na área ambiental é vasta:
-</p>
-<li>Licença ambiental;
-</li>
-<li>Ação Civil Pública;
-</li>
-<li>Compliance ambiental;
-</li>
-<li>Crime contra o meio ambiente;
-</li>
-<li>Termo de Ajustamento de Conduta;
-</li>
-<li>Responsabilização por dano ambiental;
-</li>
-<li>Multa ambiental.
-</li>
-        <p><b>Tributário:</b> Atuamos em diferentes frentes tributárias, antecipando soluções eficientes e personalizadas, buscando sempre os melhores resultados</p>
-        <li>Revisão e Recuperação de Tributos;
-</li>
-<li>Defesas Administrativas e Judiciais;
-</li>
-<li>Planejamento Tributário Preventivo;
-</li>
-<li>Consultoria em Fiscalizações e Auditorias;
-</li>
-        
-        
-        
-        `,
+        function fecharModalExterno(event) {
+            if (event.target.id === 'modal-container') fecharModal();
+        }
 
-    'modal-trabalhista': `<h2>Trabalhista & Previdenciário</h2>
-        <p><b>Previdenciário:</b>
-            
-            
-            
-            <li> Planejamento previdenciário individualizado </li>
-            <li>Aposentadorias e revisões de benefícios</li>
-            <li>Recursos Administrativos e recursos judiciais</li>
-            
-            
-            
-            </p>
-        <p><b>Trabalho (Empregados):</b> 
+        fetch('./dados.json')
+            .then(response => response.json())
+            .then(data => {
+                if(data.titulo_site) document.getElementById('titulo-principal-hero').innerHTML = data.titulo_site.replace(/\n/g, '<br>');
+                if(data.descricao_site) document.getElementById('texto-apoio-hero').innerText = data.descricao_site;
+            })
+            .catch(err => console.log("Aguardando arquivo de dados..."));
 
-“Meu empregador não cumpre as obrigações, quero sair com meus direitos, trabalhei sem carteira assinada, sofri humilhações, desvio de função, horas extras, etc”.
-
-
-
-
-            <li>Acidentes de trabalho</li>
-            <li>Acúmulo de função</li>
-            <li>Adicional de Insalubridade e Periculosidade</li>
-            <li>Desvio de função</li>
-            <li>Verbas rescisórias</li>
-            <li>Horas Extras</li>
-            <li>Reconhecimento de Vínculo</li>
-            <li>Reversão de justa causa</li>
-            <li>Demais verbas trabalhista</li>
-            
-            
-            
-            
-            
-            </p>
-        <p><b>Trabalho (Empregadores):</b> Minha empresa foi acionada judicialmente por um empregado e preciso de defesa 
-            
-            
-            
-            
-            
-            
-        <li>Defesas Judiciais e Administrativas</li>
-        <li>Prevenção de riscos trabalhistas</li>
-        <li>Treinamentos, código de conduta e política interna</li>
-        <li>Investigação de assédio, fraudes e má conduta</li>
-            
-            
-            
-            
-            
-            </p>`,
-
-    'modal-penal': `<h2>Direito Penal</h2>
-        <p><b>Direito Penal:</b>
-            
-           Reconhecendo os direitos e garantias constitucionalmente previstos aos indivíduos, a atuação do escritório objetiva resguardar o direito a um processo justo, mediante a observação do estado de inocência, presunção de não culpabilidade, contraditório, ampla defesa e devido processo legal, vale dizer, um direito penal compatível com um Estado Social Democrático de Direito.
- 
-            
-            
-            
-            
-            
-            </p>
-        <ul>
-            <li>Direito Penal Econômico;</li>
-            <li>Crimes Contra a Ordem Econômica e Tributária;</li>
-            <li>Crimes Financeiros;</li>
-            <li>⁠Crimes Empresariais;</li>
-            <li>Crimes de Evasão de Divisas;</li>
-            <li>Crimes de Falência;</li>
-            <li>⁠Lei Anticorrupção (Criminal Compliance)
-;</li>           
-           <li>Crimes Contra a Organização do Trabalho</li>
-           <li>Crimes de Responsabilidade de Prefeito</li>
-           <li>⁠Crimes de Responsabilidade de Agentes Públicos, inclusive em sua Dimensão Política (CPIs – Comissões Parlamentares de Inquérito)
-</li>
-           <li>Crimes Ambientais</li>
-           <li>Crimes Contra as Relações de Consumo</li>
-           <li>Crimes Contra a Previdência Social</li>
-           <li>Crimes Contra a Propriedade Imaterial</li>
-           <li>Crimes de Lavagem de Dinheiro</li>
-           <li>Crimes de Trânsito</li>
-           <li>Lei de Drogas</li>
-           <li>Crimes de Contrabando e Descaminho</li>
-           <li>⁠Estelionato e Outras Fraudes</li>
-           <li>Porte Ilegal de Arma de Fogo</li>
-           <li>Violência Doméstica (Lei Maria da Penha)
-</li>
-         <li>Crimes Sexuais</li>
-         <li>Lesão Corporal</li>
-         <li>Crimes Cibernéticos</li>
-         <li>Fraudes bancárias</li>
-         <li>Crimes Contra a Vida</li>
-         <li>Crimes Contra o Patrimônio</li>
-         <li>Crimes Contra a Honra</li>
-         <li>⁠Investigação Defensiva</li>
-         <li>Direito das Vítimas/ Assistência à Acusação</li>
-         <li>Recursos Criminais</li>
-         <li>Opiniões Legais e Pareceres</li>
-         <li>Tribunais Superiores</li>
-        </ul>`
-};
-
-function abrirModal(id) {
-    const modal = document.getElementById('modal-container');
-    document.getElementById('modal-body-text').innerHTML = textosCompletos[id];
-    modal.style.display = 'flex';
-    document.body.style.overflow = 'hidden'; 
-}
-
-function fecharModal() {
-    document.getElementById('modal-container').style.display = 'none';
-    document.body.style.overflow = 'auto'; 
-}
-
-function fecharModalExterno(event) {
-    if (event.target.id === 'modal-container') fecharModal();
-}
-    
-    
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
     </script>
-<script>
-  // Faz o site ler os dados que o advogado editou
-  fetch('./dados.json')
-    .then(response => response.json())
-    .then(data => {
-      // Ajusta o título principal e o texto de apoio do site do advogado
-      if(data.titulo_site) document.querySelector('.hero-content h1').innerText = data.titulo_site;
-      if(data.descricao_site) document.querySelector('.hero-content p').innerText = data.descricao_site;
-    })
-    .catch(err => console.log("Aguardando primeira edição no painel..."));
-
-  // Garante que o login redirecione para o lugar certo
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
-    
 </body>
 </html>
