@@ -16,15 +16,24 @@ collections:
           - { label: "Título Principal (Hero)", name: "titulo_site", widget: "string" }
           - { label: "Subtítulo/Descrição", name: "descricao_site", widget: "text" }
           - { label: "Cor de Destaque", name: "cor_fundo", widget: "color", default: "#e67e22" }
-
-  - name: "configuracoes"
-    label: "Configurações Gerais"
-    files:
-      - label: "Dados do Escritório"
-        name: "geral"
-        file: "dados.json" # Mantive o mesmo arquivo para facilitar
+          
+      - label: "Sobre Nós"
+        name: "sobre"
+        file: "dados.json"
         fields:
-          - { label: "WhatsApp (Ex: 5511999999999)", name: "whatsapp", widget: "string" }
-          - { label: "Endereço Completo", name: "endereco", widget: "text" }
-          - { label: "Link do Instagram", name: "instagram", widget: "string", required: false }
-          - { label: "Logo do Site", name: "logo", widget: "image", required: false }
+          - { label: "Título Sobre", name: "sobre_titulo", widget: "string" }
+          - { label: "Texto Sobre Nós", name: "sobre_texto", widget: "markdown" }
+
+      - label: "Áreas de Atuação"
+        name: "areas"
+        file: "dados.json"
+        fields:
+          - { label: "Título Seção Áreas", name: "areas_titulo", widget: "string" }
+          - { label: "Descrição Áreas", name: "areas_descricao", widget: "text" }
+
+      - label: "Onde Estamos"
+        name: "localizacao"
+        file: "dados.json"
+        fields:
+          - { label: "Título Onde Estamos", name: "onde_titulo", widget: "string" }
+          - { label: "Unidades (Texto)", name: "unidades_texto", widget: "text" }
