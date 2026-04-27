@@ -16,3 +16,15 @@ collections:
           - { label: "Título Principal (Hero)", name: "titulo_site", widget: "string" }
           - { label: "Subtítulo/Descrição", name: "descricao_site", widget: "text" }
           - { label: "Cor de Destaque", name: "cor_fundo", widget: "color", default: "#e67e22" }
+
+  - name: "configuracoes"
+    label: "Configurações Gerais"
+    files:
+      - label: "Dados do Escritório"
+        name: "geral"
+        file: "dados.json" # Mantive o mesmo arquivo para facilitar
+        fields:
+          - { label: "WhatsApp (Ex: 5511999999999)", name: "whatsapp", widget: "string" }
+          - { label: "Endereço Completo", name: "endereco", widget: "text" }
+          - { label: "Link do Instagram", name: "instagram", widget: "string", required: false }
+          - { label: "Logo do Site", name: "logo", widget: "image", required: false }
