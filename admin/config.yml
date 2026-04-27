@@ -6,34 +6,18 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "home"
-    label: "Página Inicial"
+  - name: "paginas"
+    label: "Páginas"
     files:
-      - label: "Conteúdo Principal"
-        name: "conteudo"
+      - label: "Página Inicial"
+        name: "home"
         file: "dados.json"
         fields:
           - { label: "Título Principal (Hero)", name: "titulo_site", widget: "string" }
-          - { label: "Subtítulo/Descrição", name: "descricao_site", widget: "text" }
-          - { label: "Cor de Destaque", name: "cor_fundo", widget: "color", default: "#e67e22" }
-          
-      - label: "Sobre Nós"
-        name: "sobre"
-        file: "dados.json"
-        fields:
-          - { label: "Título Sobre", name: "sobre_titulo", widget: "string" }
+          - { label: "Subtítulo (Hero)", name: "descricao_site", widget: "text" }
+          - { label: "Título Sobre Nós", name: "sobre_titulo", widget: "string" }
           - { label: "Texto Sobre Nós", name: "sobre_texto", widget: "markdown" }
-
-      - label: "Áreas de Atuação"
-        name: "areas"
-        file: "dados.json"
-        fields:
-          - { label: "Título Seção Áreas", name: "areas_titulo", widget: "string" }
-          - { label: "Descrição Áreas", name: "areas_descricao", widget: "text" }
-
-      - label: "Onde Estamos"
-        name: "localizacao"
-        file: "dados.json"
-        fields:
+          - { label: "Título Áreas de Atuação", name: "areas_titulo", widget: "string" }
+          - { label: "Descrição das Áreas", name: "areas_desc", widget: "text" }
           - { label: "Título Onde Estamos", name: "onde_titulo", widget: "string" }
-          - { label: "Unidades (Texto)", name: "unidades_texto", widget: "text" }
+          - { label: "WhatsApp (Apenas números)", name: "whatsapp", widget: "string" }
