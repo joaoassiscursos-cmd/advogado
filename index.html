@@ -9,20 +9,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
     
     <script>
-        fetch('./dados.json')
-            .then(response => response.json())
-            .then(data => {
-                if(data.titulo_site) document.getElementById('hero-title').innerText = data.titulo_site;
-                if(data.descricao_site) document.getElementById('hero-desc').innerText = data.descricao_site;
-                if(data.sobre_titulo) document.getElementById('sobre-titulo').innerText = data.sobre_titulo;
-                if(data.sobre_texto) document.getElementById('sobre-texto').innerHTML = data.sobre_texto;
-                if(data.areas_titulo) document.getElementById('areas-titulo').innerText = data.areas_titulo;
-                if(data.areas_descricao) document.getElementById('areas-desc').innerText = data.areas_descricao;
-                if(data.onde_titulo) document.getElementById('onde-titulo').innerText = data.onde_titulo;
-                if(data.cor_fundo) document.documentElement.style.setProperty('--main-orange', data.cor_fundo);
-            })
-            .catch(err => console.log('Aguardando publicação de dados...'));
-    </script>
+    fetch('./dados.json')
+        .then(response => response.json())
+        .then(data => {
+            // Só substitui se houver algo escrito no painel
+            if(data.titulo_site) document.getElementById('hero-title').innerText = data.titulo_site;
+            if(data.descricao_site) document.getElementById('hero-desc').innerText = data.descricao_site;
+            if(data.sobre_titulo) document.getElementById('sobre-titulo').innerText = data.sobre_titulo;
+            if(data.sobre_texto) document.getElementById('sobre-texto').innerHTML = data.sobre_texto;
+            if(data.areas_titulo) document.getElementById('areas-titulo').innerText = data.areas_titulo;
+            if(data.areas_desc) document.getElementById('areas-desc').innerText = data.areas_desc;
+            if(data.onde_titulo) document.getElementById('onde-titulo').innerText = data.onde_titulo;
+            
+            // Atualiza o link do WhatsApp se mudar o número
+            if(data.whatsapp) {
+                const waLinks = document.querySelectorAll('a[href*="wa.me"]');
+                waLinks.forEach(link => link.href = `https://wa.me/${data.whatsapp}`);
+            }
+        })
+        .catch(err => console.log('Usando textos padrões do HTML...'));
+</script>
 </head>
 <body>
 
